@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+    <ul id="list-container">
+        <li class="item">Lorem, ipsum dolor.</li>
+        <li class="item">Quaerat, officiis assumenda!</li>
+        <li class="item">Laboriosam, eos ad!</li>
+        <li class="item">Modi, assumenda vero.</li>
+        <li class="item">A, saepe minus!</li>
+        <li class="item">Quos, culpa at!</li>    
+    </ul>
+    <button id="add-item">Add Item</button>
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // console.log(items);
+        // for(let item of items){
+        //     item.addEventListener('click', function(event){
+        //         // console.log(event.target);
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+
+
+        // 3 steps of event delegate
+        // 1. Determine the parents of element to watch for events
+        // 2. attach event listener to the parent element
+        // 3. Use event.target to select the target element.
+        document.getElementById('list-container').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        document.getElementById('add-item').addEventListener('click', function(){
+            const li = document.createElement('li');
+            li.innerText = 'I am a boy';
+            li.classList.add('item');
+            console.log(li);
+
+            const listContainer = document.getElementById('list-container')            
+            listContainer.appendChild(li);
+        })
+    </script>
+</body>
+</html>

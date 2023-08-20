@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./25.1_dom_event.css">
+    <title>JS DOM</title>
+</head>
+<body>
+    <h1 onclick="console.log('Ami Parvez')">DOM er ajke special events</h1>
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="console.log(65)">click me</button>
+
+
+
+    <!-- 25.2 onclick event handler -->
+    <button onclick="document.body.style.backgroundColor = 'yellow'">Make yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+
+
+    <script src="./25.1_dom_event.js"></script>
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>

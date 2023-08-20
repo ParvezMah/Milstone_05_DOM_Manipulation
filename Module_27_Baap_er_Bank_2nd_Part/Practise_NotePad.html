@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePad</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9adb677e11.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center">
+        <div class="w-[700px] h-[500px] bg-sky-300 mt-16 rounded-xl">
+            <h1 class="text-3xl font-bold text-center my-3">My Text Editor</h1>
+            <div class="bg-sky-200 w-[90%] h-[82%] mx-auto border-2 border-black rounded-md">
+
+                <div class="mx-2 space-y-3 ">
+                    <!-- tools -->
+                    <div class="tools flex justify-between items-center mt-2">
+                        <div class="startSide space-x-2">
+                            <i id="Bold" class="fa-solid fa-bold"></i>
+                            <i id="Italic" class="fa-solid fa-italic"></i>
+                            <i id="Underline" class="fa-solid fa-underline"></i>
+                        </div>
+                        <div class="centerSide space-x-2">
+                            <i id="Left" class="fa-solid fa-align-left"></i>
+                            <i id="Center" class="fa-solid fa-align-center"></i>
+                            <i id="Right" class="fa-solid fa-align-right"></i>
+                            <i id="Justify" class="fa-solid fa-align-justify"></i>
+                        </div>
+                        <div class="endSide flex gap-2">
+                            <input class="w-[45px] text-sm text-center font-semibold rounded-md bg-transparent border-2 border-gray-500" type="number" name="" id="" min="1" max="100" value="16" onchange="f1(this)">
+                            <p id="caseChange" class="font-semibold">aA</p>
+                            <input type="color"id="">
+                        </div> 
+                    </div>
+                    <!-- Divider -->
+                    <div class="divider border border-zinc-900">
+                    </div>
+                    <!-- TextArea -->
+                    <div class="textArea">
+                        <textarea id="textArea"   class="outline-none p-3" placeholder="Write you description"  name=""  cols="77" rows="13"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./TextEditor.js"></script>
+    <!-- <script src="./Practise_NotePad.js"></script> -->
+</body>
+</html>

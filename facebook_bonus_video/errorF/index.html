@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class=" flex justify-center my-4 ">
+        <input id="input-field" type="email" class="border border-primary border-6 ">
+        <button id="submit-btn" type="submit" class="btn btn-accent">Submit</button>
+    </div>
+
+    <div class="max-w-3xl mx-auto" id="comment-section">
+        <p class="border border-primary border-3 p-3 comment" >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odio cumque magnam itaque, veritatis aliquid quidem. Magni harum ab facere! Ipsa odio deleniti corrupti itaque ducimus consectetur perspiciatis amet vero aliquid officia. Pariatur earum voluptates fuga inventore. Distinctio hic soluta sapiente asperiores fugiat ratione? Reprehenderit enim eveniet quibusdam laboriosam doloribus.
+        </p>
+        <p class="border border-primary border-3 p-3 comment" >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odio cumque magnam itaque, veritatis aliquid quidem. Magni harum ab facere! Ipsa odio deleniti corrupti itaque ducimus consectetur perspiciatis amet vero aliquid officia. Pariatur earum voluptates fuga inventore. Distinctio hic soluta sapiente asperiores fugiat ratione? Reprehenderit enim eveniet quibusdam laboriosam doloribus.
+        </p>
+    </div>
+    <script>
+        // document.getElementById('submit-btn').addEventListener('click', function(){
+        //     const inputArea = document.getElementById('input-field');
+        //     const text = inputArea.value
+        //     inputArea.value = '';
+            
+        //     const commentSection = document.getElementById('comment-section');
+            
+        //     const paragraph = document.createElement('p');
+        //     paragraph.innerText = text;
+            
+            
+        //     commentSection.appendChild(paragraph);
+
+
+        //     paragraph.setAttribute('class','border border-primary border-6 p-3 mt-3');
+
+
+
+            
+        // })
+
+
+        
+            // 2nd Part
+            const elem = document.getElementsByClassName('comment');
+            for(let i=0; i<elem.length; i++){
+                let p = elem[i];
+                p.style.color = 'red';
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident nulla obcaecati eaque tenetur ullam dolores fugit eligendi magni architecto.</p>
+
+
+
+        <h1>Dom de re Baba</h1>
+        <ul>
+            <li>Jalali Set</li>
+            <li>shafayet</li>
+            <li>Jalali Set</li>
+            <li>Dom Dom</li>
+        </ul>
+        <h1 id="fruits-title">Fruits</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+        </ul>
+
+        <h1 id="places-title">Fruits</h1>
+        <ul>
+            <li class="important-places">Apple</li>
+            <li class="important-places">Banana</li>
+            <li class="important-places">Carrot</li>
+        </ul>
+    </header>
+    <script src="./DOM.js"></script>
+    <script>
+        const student = {
+            name: 'Abul',
+            ID: 11,
+            study: function(time){
+                console.log(time, 'Portese');
+            }
+        }
+        // console.log('Inside the html file');
+        // const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        // for(let item of liCollection){
+        //     console.log(item);
+            // console.log(item.innerText);
+        // }
+
+        // const allHeadings = document.getElementsByTagName('h1');
+        //     for(const h1 of allHeadings){
+        //         console.log(h1);
+        //         console.log(h1.innerHTML);
+        //         console.log(h1.innerText);
+        //     }
+        const places = document.getElementsByClassName('important-places');
+        console.log(places);
+        for(const place of places){
+            console.log(place);
+        }
+
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruts Change by JS';
+        console.log(fruitsTitle);
+        console.log(fruitsTitle.innerText);
+
+    </script>
+</body>
+</html>

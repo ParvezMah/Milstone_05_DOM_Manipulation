@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: aqua;
+    height: 100vh;
+}
+#ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+}

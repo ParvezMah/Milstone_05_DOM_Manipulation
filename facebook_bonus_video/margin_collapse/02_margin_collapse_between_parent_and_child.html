@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-color: red;
+            height: 100px;
+            /* 1. In foramtic context layout adding padding to avoid margin collapse */
+            /* padding: 1px; */
+
+            /* 2. But in Flex, Grid Layout it will not happens */
+            /* display: grid; */
+            /* display: flex; */
+
+            /* 3. Flow-Root */
+            display: flow-root;
+        }
+        .child{
+            border: 5px solid green;
+            /* To avoid margin collapse add padding to parent div */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            I am child div
+        </div>
+    </div>
+
+</body>
+</html>
